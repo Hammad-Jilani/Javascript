@@ -17,5 +17,15 @@ let isBoolean = 1;
 
 let someNumber = 31;
 
-console.log(typeof someNumber);
-let toString = String(someNumber);
+// console.log(typeof someNumber);
+// let toString = String(someNumber);
+
+let string1 = "Hammad";
+let string2 = " Jilani";
+
+let string3 = string1+string2;
+console.log(string3);
+
+console.log(1 + "2");
+console.log("1"+2+2);
+console.log("1"+"2");
