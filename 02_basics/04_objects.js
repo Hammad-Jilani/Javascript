@@ -4,7 +4,7 @@ facebookUser.id = "abcd1234";
 facebookUser.name = "abcd";
 facebookUser.isLoggedin = false;
 
-console.log(facebookUser); 
+// console.log(facebookUser); 
 const regularUser = {
     email : "someone@gmail.com",
     fullname:{
@@ -21,7 +21,7 @@ const object3 = {5:"e",6:"f"};
 // const object4 = Object.assign({},object1,object2,object3);
 
 const object4 = {...object1,...object2,...object3};
-console.log(object4);
+// console.log(object4);
 
 const user = [
     {
@@ -39,9 +39,21 @@ const user = [
 ]
 // console.log(user[1]);
 
-console.log(facebookUser);
-console.log(Object.keys(facebookUser));
-console.log(Object.values(facebookUser));
-console.log(Object.entries(facebookUser));
+// console.log(facebookUser);
+// console.log(Object.keys(facebookUser));
+// console.log(Object.values(facebookUser));
+// console.log(Object.entries(facebookUser));
 
-console.log(facebookUser.hasOwnProperty('email'));
+// console.log(facebookUser.hasOwnProperty('email'));
+
+const course = {
+    courseName:"PF",
+    price:599,
+    courseInstructor:"Hammad"
+}
+// course.courseInstructor
+// const{courseInstructor} = course;
+// console.log(courseInstructor);
+
+const{courseInstructor : instructor} = course;
+console.log(instructor);
