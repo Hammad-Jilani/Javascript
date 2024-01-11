@@ -9,6 +9,7 @@ const newName = new String("Hammad Jilani");
 // console.log(newName.toUpperCase());
 // console.log(newName.charAt(3));
 // console.log(newName.indexOf('t'));
+
 const newString = newName.substring(0,4);
 console.log(`Value of new String is ${newString}`);
 const anotherString = newName.slice(0,4);

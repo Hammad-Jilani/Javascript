@@ -12,7 +12,7 @@ let isBoolean = 1;
 // let toBoolean  = Boolean(isBoolean);
 // console.log(toBoolean);
 
-// 1 => true; 0=> false;
+// 1 => true; 0 => false;
 // "" => false;
 
 let someNumber = 31;
