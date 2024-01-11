@@ -6,7 +6,7 @@ const coding = ['js','rb','py','java','cpp'];
 // console.log(value);
 
 const nums = [1,2,3,4,5,6,7,8,9];
-// important to return 
+// important to return if braces used
 const newNums=nums.filter((num)=> {
     return num > 4
 });
