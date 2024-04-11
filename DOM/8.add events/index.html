@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button onclick="console.log('GA')">Click me</button>
+    <button class="second-btn">Bad way</button>
+    <button class="best">Best way</button>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt exercitationem officia fugiat, necessitatibus beatae quod laudantium totam iste asperiores! Nobis esse dolores blanditiis. Similique eius odit nobis iste fugiat libero?
+    </p>
+    <form>
+        <input type="text">
+        <input type="submit" value="submit">
+    </form>
+</body>
+<script>
+    const best = document.querySelector('.second-btn');
+    best.addEventListener("click",(e)=>{
+        console.log(e);
+    })
+    const input = document.querySelector('input');
+    const form = document.querySelector('form');
+    form.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        console.log(event);
+        console.log(input.value);
+    })
+</script>
+</html>

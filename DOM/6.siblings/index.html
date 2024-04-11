@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="fourth">4</li>
+    </ul>
+</body>
+<script>
+    console.log(document.querySelector('ul').firstElementChild);
+    console.log(document.querySelector('ul').parentElement);
+    console.log(document.querySelector('ul').lastElementChild);
+
+    // console.log(document.querySelector('li:nth-child(1)'));
+    // console.log(document.querySelector('ul').children[1]);
+
+    const first = document.querySelector('li:nth-child(2)');
+    console.log(first.nextElementSibling);
+    console.log(first.previousElementSibling);
+    first.style.color="blue";
+    // first.style.margin = "100px";
+    first.nextElementSibling.style.backgroundColor="green";
+    const li = document.querySelector('li');
+    console.log(li[3]);
+</script>
+</html>
